@@ -74,7 +74,13 @@ There are there Pd patches fulfilling the entire interaction: getOSC.pd and send
   ![image](https://wantinghsieh.com/wp-content/uploads/Moving-Instrumentbot_Pd_6_web.png)
   
 ### 4. Send accelerator data in OSC format from smartphone’s [OSC App][osc-app] to PC which runs getOSC Pd patch.
-  ![image](https://wantinghsieh.com/wp-content/uploads/Moving-Instrumentbot_Pd_2_web.png)
+  ![image](https://wantinghsieh.com/wp-content/uploads/Moving-Instrumentbot_OSC_App_all_web.jpg)
 
 ### 5. PC receives axes’ data from the smartphone and reorganizes it into pure floating-point values.
   ![image](https://wantinghsieh.com/wp-content/uploads/Moving-Instrumentbot_Pd_getOSC_web.png)
+
+### 6. Wekinator gets pure axis data from sendOSCToWek Pd patch running on the same port.
+  ![image](https://wantinghsieh.com/wp-content/uploads/Moving-Instrumentbot_Pd_sendOSCToWek_web.png)
+
+### 7. The values of L293D’s four INPUT pins are set high or low according to the type of output classes trained by Wekinator. The frequency played by the speaker is also controlled by it.
+  ![image](https://wantinghsieh.com/wp-content/uploads/Moving-Instrumentbot_Pd_5_web.png)
